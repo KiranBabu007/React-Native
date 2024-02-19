@@ -5,9 +5,8 @@ export default function App() {
     <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
       <Button
         title="Press"
-        onPress={() => alert("Button clicked aane")}
+        onPress={() => alert("Button clicked")}
         color="midnightblue"
-        
       />
     </View>
   );
