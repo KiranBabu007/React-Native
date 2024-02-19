@@ -14,7 +14,7 @@ export default function App() {
 
       <Modal
         visible={isVisible}
-        style={{ flex: 1, backgroundColor: "plum", padding: 60 }}
+        style={{ flex: 1, backgroundColor: "lightseagreen", padding: 60 }}
         animation="slide"
       >
         <Button
