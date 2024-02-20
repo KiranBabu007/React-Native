@@ -1,5 +1,11 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, SafeAreaView, Platform } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  ScrollView,
+  SafeAreaView,
+  Platform,
+} from "react-native";
 import PokemonCard from "./components/PokemonCard";
 
 export default function App() {
@@ -41,7 +47,12 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <PokemonCard  {...charmanderData}/>
+      <ScrollView>
+        <PokemonCard {...charmanderData} />
+        <PokemonCard {...squirtleData} />
+        <PokemonCard {...bulbasaurData} />
+        <PokemonCard {...pikachuData} />
+      </ScrollView>
     </SafeAreaView>
   );
 }
