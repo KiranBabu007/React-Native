@@ -14,14 +14,22 @@ export default function App() {
 
       <Modal
         visible={isVisible}
-        style={{ flex: 1, backgroundColor: "lightseagreen", padding: 60 }}
-        animation="slide"
+        animationType="fade"
+        onRequestClose={() =>
+          isVisible ? setIsVisible(false) : setIsVisible(true)
+        }
       >
-        <Button
-          title="Back"
-          onPress={() => (isVisible ? setIsVisible(false) : setIsVisible(true))}
-          color="palevioletred"
-        />
+        <View
+          style={{ flex: 1, backgroundColor: "cornflowerblue", padding: 60 }}
+        >
+          <Button
+            title="Back"
+            onPress={() =>
+              isVisible ? setIsVisible(false) : setIsVisible(true)
+            }
+            color="palevioletred"
+          />
+        </View>
       </Modal>
     </View>
   );
