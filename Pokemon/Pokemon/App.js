@@ -31,7 +31,7 @@ export default function App() {
     name: "Bulbasaur",
     image: require("./assets/bulbasaur.png"), // Replace with the actual image path
     type: "Grass",
-    hp: 45,
+    hp: 50,
     moves: ["Tackle", "Vine Whip", "Growl", "Leech Seed"],
     weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
   };
