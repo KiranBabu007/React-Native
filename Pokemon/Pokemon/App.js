@@ -13,7 +13,7 @@ export default function App() {
     name: "Charmander",
     image: require("./assets/charmander.png"),
     type: "Fire",
-    hp: 39,
+    hp: 59,
     moves: ["Scratch", "Ember", "Growl", "Leer"],
     weaknesses: ["Water", "Rock"],
   };
